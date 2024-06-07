@@ -5,12 +5,12 @@
 .page {
   --background-color: #000028;
   --main-color: #ff0070;
-  --title-accent-color: #DB00FF;
+  --title-accent-color: #db00ff;
   --text-accent-color: #000028;
-  --text-general-color: #F1B2CE;
+  --text-general-color: #f1b2ce;
   --font-family: "IBM Plex mono", sans-serif;
   --font-size: 18px;
   --line-height: 23.4px;
   --background-image: url(../images/cover-image-dark.png);
-  --hover-button-border-color: rgba(255, 0, 112, .4)
+  --hover-button-border-color: rgba(255, 0, 112, 0.4);
 }
