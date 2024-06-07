@@ -19,6 +19,8 @@
 .header {
   padding: 10px;
   margin-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 @media screen and (min-width: 768px) {
@@ -167,16 +169,15 @@
   border: 1px solid var(--hover-button-border-color);
 }
 
-.header__theme-menu-button:has(:focus-visible) {
-  border-bottom: 1px solid var(--hover-button-border-color);
-}
-
 .header__theme-menu-button:active {
   border: 1px solid var(--hover-button-border-color);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--hover-button-border-color);
 }
 
@@ -290,7 +291,7 @@
   position: relative;
 }
 
-.main-text__link:has(:focus-visible) {
+.main-text__link:focus-visible {
   border: 1px solid var(--text-general-color);
   padding: 1px 1px;
 }
@@ -305,7 +306,6 @@
 
 .main-text__link:focus {
   outline: none;
-  border: 1px solid var(--text-general-color);
 }
 
 .main-examples {
@@ -439,6 +439,7 @@
 .footer {
   inline-size: 100%;
   block-size: 100vh;
+  min-block-size: 668px;
   display: flex;
   flex-direction: column;
   align-items: center;
