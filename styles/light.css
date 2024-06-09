@@ -20,23 +20,7 @@
   --background-image: url(../images/cover-image-light.png);
   --visibility-settings: hidden;
   --hover-button-border-color: rgba(50, 49, 45, 0.4);
+  --focus-button-border-color: #353430;
 }
 
 /* Остальные стили */
-
-@media (prefers-color-scheme: light) {
-  .page {
-    /* Дублируем переменные светлой темы */
-    --background-color: #fff1f7;
-    --main-color: #ff8dcb;
-    --title-accent-color: #ffc2e6;
-    --text-accent-color: #ff0070;
-    --text-general-color: #353430;
-    --font-family: "IBM Plex mono", sans-serif;
-    --font-size: 18px;
-    --line-height: 23.4px;
-    --background-image: url(../images/cover-image-light.png);
-    --visibility-settings: hidden;
-    --hover-button-border-color: rgba(50, 49, 45, 0.4);
-  }
-}
