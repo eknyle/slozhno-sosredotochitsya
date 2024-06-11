@@ -1,16 +1,16 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 .page {
   --background-color: #000028;
-  --main-color: #ff0070;
-  --title-accent-color: #db00ff;
-  --text-accent-color: #000028;
-  --text-general-color: #f1b2ce;
+  --background-image: url(../images/cover-image-dark.png);
   --font-family: "IBM Plex mono", sans-serif;
   --font-size: 18px;
-  --line-height: 23.4px;
-  --background-image: url(../images/cover-image-dark.png);
+  --focus-button-border-color: #ff0070;
   --hover-button-border-color: rgba(255, 0, 112, 0.4);
+  --line-height: 23.4px;
+  --main-color: #ff0070;
+  --subtitle-background-color: #ff0070;
+  --subtitle-main-color: #ff0070;
+  --text-general-color: #f1b2ce;
+  --text-accent-color: #000028;
+  --title-accent-color: #db00ff;
+  --visibility-settings: visible;
 }

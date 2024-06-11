@@ -1,48 +1,35 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --background-color: #fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+  --font-family: "IBM Plex mono", sans-serif;
+  --font-size: 18px;
+  --focus-button-border-color: #353430;
+  --hover-button-border-color: rgba(50, 49, 45, 0.4);
+  --line-height: 23.4px;
   --main-color: #ff0070;
   --subtitle-background-color: #ff8dcb;
   --subtitle-main-color: #353430;
-  --title-accent-color: #ffc2e6;
-  --text-accent-color: #353430;
   --text-general-color: #353430;
-  --font-family: "IBM Plex mono", sans-serif;
-  --font-size: 18px;
-  --line-height: 23.4px;
-  --background-image: url(../images/cover-image-light.png);
+  --text-accent-color: #353430;
+  --title-accent-color: #ffc2e6;
   --visibility-settings: hidden;
-  --hover-button-border-color: rgba(50, 49, 45, 0.4);
-  --focus-button-border-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   .page {
     --background-color: #fff1f7;
+    --background-image: url(../images/cover-image-light.png);
+    --font-family: "IBM Plex mono", sans-serif;
+    --font-size: 18px;
+    --focus-button-border-color: #353430;
+    --hover-button-border-color: rgba(50, 49, 45, 0.4);
+    --line-height: 23.4px;
     --main-color: #ff0070;
     --subtitle-background-color: #ff8dcb;
     --subtitle-main-color: #353430;
-    --title-accent-color: #ffc2e6;
-    --text-accent-color: #353430;
     --text-general-color: #353430;
     --text-accent-color: #353430;
-    --font-family: "IBM Plex mono", sans-serif;
-    --font-size: 18px;
-    --line-height: 23.4px;
-    --background-image: url(../images/cover-image-light.png);
+    --title-accent-color: #ffc2e6;
     --visibility-settings: hidden;
-    --hover-button-border-color: rgba(50, 49, 45, 0.4);
-    --focus-button-border-color: #353430;
   }
 }
-
-/* Остальные стили */
