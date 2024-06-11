@@ -1,5 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--background-color);
@@ -47,7 +46,7 @@
 .decorated-zone::before {
   content: "";
   display: block;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--subtitle-main-color);
   z-index: 20;
   position: absolute;
   overflow: hidden;
@@ -126,8 +125,8 @@
 
 @media screen and (min-width: 1024px) {
   .header__theme-menu {
-    margin-top: 20px;
-    margin-bottom: 273px;
+    margin-top: 18px;
+    margin-bottom: 275px;
     justify-content: center;
     align-items: start;
   }
@@ -153,6 +152,7 @@
     flex-direction: row;
     column-gap: 10px;
     justify-content: center;
+    align-items: start;
   }
 }
 
@@ -165,13 +165,15 @@
 }
 
 .header__theme-menu-button {
-  inline-size: 70px;
-  block-size: 26px;
+  min-inline-size: 70px;
+  min-block-size: 26px;
   line-height: 18px;
+  font-size: 1.125rem;
+  font-weight: normal;
   background-color: transparent;
   border: none;
   text-transform: lowercase;
-  color: var(--main-color);
+  color: var(--subtitle-main-color);
 }
 
 .header__theme-menu-button:hover {
@@ -194,7 +196,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--focus-button-border-color);
+  outline: 1px solid var(--focus-button-border-color);
   pointer-events: none;
 }
 
@@ -232,16 +234,19 @@
   }
 }
 
-.block-settings {
-  display: flex;
-  flex-direction: column;
-}
+
 .main {
   display: flex;
   flex-direction: column;
   margin: 40px 10px 40px 10px;
   row-gap: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
 }
+
+.main-settings {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .main {
     margin: 40px 20px 60px 20px;
@@ -253,12 +258,12 @@
   font-size: 1.125rem;
 }
 
-.about {
+.main-about {
   row-gap: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .about {
+  .main-about {
     display: grid;
     grid-template-columns: clamp(14.75rem, -0.0625rem + 30.8594vw, 19.6875rem) 1fr;
     grid-template-rows: 1fr;
@@ -273,7 +278,7 @@
 }
 
 .main-title {
-  color: var(--main-color);
+  color: var(--subtitle-main-color);
 }
 
 .main-title_accent {
@@ -293,7 +298,7 @@
 
 .main-text__link {
   color: var(--text-general-color);
-  text-shadow: 2px 1px 0 var(--main-color);
+  text-shadow: 2px 1px 0 var(--subtitle-background-color);
   text-decoration: none;
   position: relative;
 }
@@ -318,19 +323,19 @@
   outline: none;
 }
 
-.examples {
+.main-examples {
   row-gap: 20px;
 }
 
-.examples > h2 {
+.main-examples > h2 {
   margin-right: clamp(0rem, -29.938rem + 127.7354vw, 31.375rem);
 }
 @media screen and (min-width: 1024px) {
-  .examples > h2 {
+  .main-examples > h2 {
     margin-right: 43.063rem;
   }
 
-  .examples .main__list {
+  .main-examples .main__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -338,14 +343,14 @@
   }
 }
 
-.recomendations {
+.main-recomendations {
   inline-size: 100%;
   align-items: flex-start;
   row-gap: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .recomendations {
+  .main-recomendations {
     display: grid;
     grid-template-columns: clamp(14.75rem, -0.0625rem + 30.8594vw, 19.6875rem) 1fr;
     grid-template-rows: 1fr;
@@ -353,15 +358,16 @@
   }
 }
 
-.gallery {
+.main-gallery {
   row-gap: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .gallery {
+  .main-gallery {
     row-gap: 20px;
   }
 }
+
 .gallery-list {
   display: flex;
   flex-direction: column;
@@ -370,79 +376,56 @@
   align-self: center;
 }
 
-.image-sunset {
-  inline-size: 22.1875rem;
-  block-size: 8.9rem;
+.gallery-item {
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+  min-inline-size: 100%;
+  min-block-size: 100%;
 }
 
-.image-books {
-  inline-size: 22.1875rem;
-  block-size: 22.18rem;
-}
-
-.image-tape {
-  inline-size: 22.1875rem;
-  block-size: 14.8rem;
-}
-
-.image-street {
-  inline-size: 22.1875rem;
-  block-size: 14.8rem;
-}
-
-.ice-cream {
-  inline-size: 22.1875rem;
-  block-size: 22.1875rem;
+.gallery-item > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
   .gallery-list {
     display: grid;
-    grid-template-columns: repeat(3, min-content);
-    grid-template-rows: repeat(3, min-content);
-    grid-template:
-      "A A B"
-      "C D B"
-      "C E E";
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
     gap: 20px;
   }
-  .image-sunset {
-    grid-area: A;
-    width: clamp(29.9375rem, -1.9375rem + 66.4063vw, 40.5625rem);
-    height: clamp(12rem, -0.75rem + 26.5625vw, 16.25rem);
-    object-fit: cover;
+
+  .gallery-item:first-child {
+    grid-column: span 2;
+  }
+  
+  .gallery-item:nth-of-type(2) {
+    grid-column: 3;
+    grid-row: span 2;
+  }
+  
+  .gallery-item:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 2/ span 2;
   }
 
-  .ice-cream {
-    grid-area: B;
-    width: clamp(14.3125rem, -1.8125rem + 33.5938vw, 19.6875rem);
-    height: clamp(27.5625rem, -1.3125rem + 60.1563vw, 37.1875rem);
-    object-fit: cover;
+  .gallery-item:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 2;
   }
-
-  .image-tape {
-    grid-area: C;
-    width: clamp(14.3125rem, -1.8125rem + 33.5938vw, 19.6875rem);
-    height: clamp(35.5rem, -2rem + 78.125vw, 48rem);
-    object-fit: cover;
-  }
-  .image-books {
-    grid-area: D;
-    width: clamp(14.375rem, -1.5625rem + 33.2031vw, 19.6875rem);
-    height: clamp(14.375rem, -1.5625rem + 33.2031vw, 19.6875rem);
-    object-fit: cover;
-  }
-
-  .image-street {
-    grid-area: E;
-    width: clamp(29.9375rem, -1.9375rem + 66.4063vw, 40.5625rem);
-    height: clamp(19.875rem, -0.75rem + 42.9688vw, 26.75rem);
-    object-fit: cover;
+  .gallery-item:nth-of-type(5) {
+    grid-column: 2 / span 2;
+    grid-row: 3;
   }
 }
 
 .text-decor {
-  background-color: var(--main-color);
+  background-color: var(--subtitle-background-color);
   color: var(--text-accent-color);
 }
 

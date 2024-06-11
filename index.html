@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -16,7 +16,9 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <span aria-hidden="true" id="decorated-element" class="decorated-element">REC</span>
+      <span aria-hidden="true" id="decorated-element" class="decorated-element"
+        >REC</span
+      >
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -44,10 +46,12 @@
         </ul>
       </nav>
       <h1 class="title header__title">no focus</h1>
-      <p class="header__text text-decor">Что делать, когда не можешь делать ничего&#10;Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+      <p class="header__text text-decor">Что делать, когда не можешь делать ничего&#10;Или почему нам так сложно
+        сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
     <main class="main">
-      <section class="block-settings about">
+      <section class="main-settings main-about">
         <h2 class="main-title">Почему сосредоточиться&nbsp;так сложно</h2>
         <ul class="main__list">
           <li>
@@ -56,11 +60,17 @@
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
-              её просто не существует. Исследователи <a class="main-text__link main-text__link_active" target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7075496/">выяснили</a>, что мозгу тяжело
-              концентрироваться даже на двух делах одновременно. А когда в поле
-              внимания попадает несколько важных задач, организм паникует и
-              выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
-              работаем невнимательно: ошибаемся и быстро устаём.
+              её просто не существует. Исследователи
+              <a
+                class="main-text__link main-text__link_active"
+                target="_blank"
+                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7075496/"
+                >выяснили</a
+              >, что мозгу тяжело концентрироваться даже на двух делах
+              одновременно. А когда в поле внимания попадает несколько важных
+              задач, организм паникует и выделяет кортизол и адреналин —
+              «гормоны стресса». Из-за этого мы работаем невнимательно:
+              ошибаемся и быстро устаём.
             </p>
           </li>
           <li>
@@ -78,10 +88,8 @@
           </li>
         </ul>
       </section>
-      <section class="block-settings examples">
-        <h2 class="main-title">
-          Что снижает концентрацию внимания?
-        </h2>
+      <section class="main-settings main-examples">
+        <h2 class="main-title">Что снижает концентрацию внимания?</h2>
         <ul class="main__list">
           <li>
             <h3 class="main-title text-decor">Многозадачность</h3>
@@ -119,17 +127,19 @@
           </li>
         </ul>
       </section>
-      <section class="block-settings recomendations">
+      <section class="main-settings main-recomendations">
         <h2 class="main-title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
         <ul class="main__list">
-          <li><h2 class="main-title main-title_accent text-decor">
-            5 простых (на самом деле не очень) советов
-          </h2></li>
           <li>
-            <h3 class="main-subtitle text-decor">Представьте небо и облака</h3>
+            <h3 class="main-title main-title_accent text-decor">
+              5 простых (на самом деле не очень) советов
+            </h3>
+          </li>
+          <li>
+            <h4 class="main-subtitle text-decor">Представьте небо и облака</h4>
             <p class="main-text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -142,7 +152,7 @@
             </p>
           </li>
           <li>
-            <h3 class="main-subtitle text-decor">Включите музыку</h3>
+            <h4 class="main-subtitle text-decor">Включите музыку</h4>
             <p class="main-text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -151,19 +161,23 @@
             </p>
           </li>
           <li>
-            <h3 class="main-subtitle text-decor">Прогуляйтесь</h3>
+            <h4 class="main-subtitle text-decor">Прогуляйтесь</h4>
             <p class="main-text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-              <a class="main-text__link" target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">показал</a>, что созерцание природы повышает концентрацию, в то время
-              как после просмотра городских пейзажей она наоборот понижается.
-              Можно совместить прогулку с физическими упражнениями или бегом —
-              так в мозг поступит ещё больше кислорода и он будет лучше
-              работать. Но и простая двадцатиминутная прогулка — тоже отличный
-              вариант.
+              <a
+                class="main-text__link"
+                target="_blank"
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+                >показал</a
+              >, что созерцание природы повышает концентрацию, в то время как
+              после просмотра городских пейзажей она наоборот понижается. Можно
+              совместить прогулку с физическими упражнениями или бегом — так в
+              мозг поступит ещё больше кислорода и он будет лучше работать. Но и
+              простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
           </li>
           <li>
-            <h3 class="main-subtitle text-decor">Хорошо ешьте</h3>
+            <h4 class="main-subtitle text-decor">Хорошо ешьте</h4>
             <p class="main-text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
@@ -172,7 +186,7 @@
             </p>
           </li>
           <li>
-            <h3 class="main-subtitle text-decor">Читайте</h3>
+            <h4 class="main-subtitle text-decor">Читайте</h4>
             <p class="main-text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -182,39 +196,39 @@
           </li>
         </ul>
       </section>
-      <section class="block-settings gallery">
+      <section class="main-settings main-gallery">
         <h2 class="main-title text-decor">А можно в картинках?</h2>
         <div class="gallery-list">
-            <img
-              loading="lazy"
-              class="image-sunset"
-              alt="Закат"
-              src="./images/sunset.png"
-            />
-            <img
-              loading="lazy"
-              class="ice-cream"
-              alt="Мороженое"
-              src="./images/ice-cream.png"
-            />
-            <img
-              loading="lazy"
-              class="image-tape"
-              alt="Пленка"
-              src="./images/tape.png"
-            />  
-            <img
-              loading="lazy"
-              class="image-books"
-              alt="Книги"
-              src="./images/books.png"
-            />
-            <img
-              loading="lazy"
-              class="image-street"
-              alt="Улица"
-              src="./images/street.png"
-            />
+          <img
+            loading="lazy"
+            class="gallery-item"
+            alt="Закат"
+            src="./images/sunset.png"
+          />
+          <img
+            loading="lazy"
+            class="gallery-item"
+            alt="Мороженое"
+            src="./images/ice-cream.png"
+          />
+          <img
+            loading="lazy"
+            class="gallery-item"
+            alt="Пленка"
+            src="./images/tape.png"
+          />
+          <img
+            loading="lazy"
+            class="gallery-item"
+            alt="Книги"
+            src="./images/books.png"
+          />
+          <img
+            loading="lazy"
+            class="gallery-item"
+            alt="Улица"
+            src="./images/street.png"
+          />
         </div>
       </section>
     </main>
