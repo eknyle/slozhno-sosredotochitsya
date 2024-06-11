@@ -234,7 +234,6 @@
   }
 }
 
-
 .main {
   display: flex;
   flex-direction: column;
@@ -403,15 +402,15 @@
   .gallery-item:first-child {
     grid-column: span 2;
   }
-  
+
   .gallery-item:nth-of-type(2) {
     grid-column: 3;
     grid-row: span 2;
   }
-  
+
   .gallery-item:nth-of-type(3) {
     grid-column: 1;
-    grid-row: 2/ span 2;
+    grid-row: 2 / span 2;
   }
 
   .gallery-item:nth-of-type(4) {
